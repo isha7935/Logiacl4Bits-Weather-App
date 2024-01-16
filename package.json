@@ -1,0 +1,17 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ashish-Sunil-Vaidya/Task-2.git",
+  "author": "Calm Person <ashuvaidya2003@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "front": "cd frontend && yarn",
+    "back": "cd backend && yarn",
+    "dev": "concurrently \"yarn front dev\" \"yarn back dev\"",
+    "install": "yarn front && yarn back"
+  }
+}
